@@ -35,7 +35,7 @@ body {
 /* SCREEN MANAGEMENT (Hiding/Showing) */
 .screen {
     opacity: 0;           /* Start all screens invisible */
-    transition: opacity 0.8s ease-in-out; /* Smooth transition when visibility changes */
+    transition: opacity 1s ease-in-out; /* Smooth transition when visibility changes */
 }
 
 .screen.active {
