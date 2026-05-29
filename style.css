@@ -1,3 +1,124 @@
-.title {
-    color: green;
+/* GLOBAL STYLES & VARIABLES */
+:root {
+    /* Defining the color scheme using light browns */
+    --color-primary-light: #d2b48c; /* Tan/Light Brown base */
+    --color-secondary-dark: #a0522d; /* Sienna/Medium Brown for contrast */
+    --color-glow: rgba(160, 82, 45, 0.7); /* Darker brown for glow effect */
+    --color-text-main: #3e2723; /* Very dark brown for main text */
+}
+
+/* BASE RESET & FONT SETUP */
+* {
+    box-sizing: border-box; /* Ensures padding/border are included in the total width/height */
+    margin: 0;           /* Removes default margins from all elements */
+    padding: 0;          /* Removes default padding from all elements */
+}
+
+body {
+    font-family: 'Lora', serif; /* Primary font for readability (Body Text) */
+    background-color: #f5e6d8; /* Very light background cream/beige */
+    display: flex;           /* Use flexbox to center the main container */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    min-height: 100vh;       /* Ensure body takes up full viewport height */
+    color: var(--color-text-main); /* Default text color */
+}
+
+/* CONTAINER STYLES */
+#app-container {
+    width: 90%; /* Make container responsive, taking up 90% of the screen width */
+    max-width: 800px; /* Limit maximum size on very large screens */
+    padding: 40px 20px;
+    text-align: center; /* Center content within the container */
+}
+
+/* SCREEN MANAGEMENT (Hiding/Showing) */
+.screen {
+    opacity: 0;           /* Start all screens invisible */
+    transition: opacity 0.8s ease-in-out; /* Smooth transition when visibility changes */
+}
+
+.screen.active {
+    opacity: 1;           /* Make the active screen fully visible */
+}
+
+.screen.hidden {
+    display: none;        /* Completely hide screens that are not active */
+}
+
+/* TYPOGRAPHY STYLES (Using Playfair for Headings) */
+h1, h2 {
+    font-family: 'Playfair Display', serif; /* Use the fancier font for main titles */
+    margin-bottom: 30px; /* Space below major headings */
+}
+
+/* BUTTON STYLING & GLOW EFFECT (Applies to all primary buttons) */
+.styled-button {
+    font-family: 'Lora', serif;
+    padding: 12px 35px;
+    margin: 10px; /* Space between buttons */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border: none;      /* Removes default button border */
+    border-radius: 15px;/* Soft rounded corners */
+    font-size: 1.1em;  /* Slightly larger text */
+    background-color: var(--color-primary-light); /* Base light brown fill */
+    color: var(--color-text-main);
+    transition: all 0.3s ease; /* Smooth transition for all changes (glow, scale) */
+
+    /* Initial Glow Effect using Box Shadow */
+    box-shadow: 0 0px 15px var(--color-glow); /* Soft initial glow */
+}
+
+/* HOVER EFFECT (The required enhancement on hover) */
+.styled-button:hover {
+    /* Makes the box slightly better/brighter and glows more intensely */
+    box-shadow: 0 8px 40px rgba(139, 69, 19, 0.8); /* Stronger, richer glow on hover (e.g., Coffee color) */
+    transform: translateY(6px) scale(1.30); /* Slight lift and size increase */
+    background-color: #cfa47b; /* Slightly lighter background on hover */
+}
+
+/* SPECIFIC GROUP STYLING FOR START SCREEN BUTTONS */
+#start-screen .button-group {
+    display: flex;           /* Arrange buttons in a row */
+    justify-content: center; /* Center them horizontally */
+    margin-top: 30px;        /* Space above the button group */
+}
+
+/* SLIDE CONTENT STYLING */
+#slide-content {
+    background-color: #D6BBA5; /* White background for readability of the slide text */
+    padding: 40px;           /* Padding inside the slide box */
+    /*border: 1px solid var(--color-primary-light); /* Outline effect */
+    box-shadow: 0 0 40px rgba(214, 187, 165, 1.3); /* Subtle background glow for the text area */
+    margin-bottom: 45px;   /* Space between slide box and next button */
+    border-radius: 30px;  /* Rounded corners for the slide box */
+}
+
+/* FINALE SCREEN STYLING */
+.finale-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the four final buttons */
+    margin-top: 40px;
+}
+
+/* HEART ANIMATION CONTAINER */
+#heart-animation {
+    font-size: 150px; /* Make the heart large enough to be visible */
+    opacity: 0;   /* Start hidden */
+    transition: opacity 1s ease-out; /* Transition for fading in/out */
+}
+
+/* MEDIA QUERY FOR SMALLER SCREENS (Optional but good practice) */
+@media (max-width: 600px) {
+    #start-screen .button-group,
+    .finale-buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center;
+    }
+    /* Adjust button padding for vertical stacking */
+    .styled-button {
+        width: 80%; /* Make buttons take up more width when stacked */
+        margin: 10px auto;
+    }
 }
