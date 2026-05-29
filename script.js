@@ -25,7 +25,9 @@ const birthdaySlides = [
     "you call me nicknames i seriously love, baby my sweet boy, my handsome boy, and just now honey. they are just all so sweet and i get so nervous or anxious inside every time you call me it, it just makes me so happy", // Slide 5
     "So interesting howyou are into birds, i never met anyone who's that interested on something like that, especially with the out side, i would love to talk to you all day about birds, i’d love to learn. oo i wonder what your favorite bird is", // Slide 6
     "one of the things i love aswell open you are with me. even if you weren't at first, who is really? i had no idea what to do at the moment and i kinda js felt useless at that time. im still really happy i was at least able to try", // Slide 7
-    "Never forget in the end of the day, love all of you. i love how beautiful you are i love how happy you look with your with people you love. how bright you glow when you talk about your Interests, and passionate you are of those interested. and how much you mean to me i love you. i don't care what anyone says i love you, i don't care about anyone else because i love you. i don't care if we we're thousands of miles away i will still love you. nothing can change that ever" // Slide 8
+    "Never forget in the end of the day, love all of you. i love how beautiful you are i love how happy you look with your with people you love. how bright you glow when you talk about your Interests, and passionate you are of those interested. and how much you mean to me i love you. i don't care what anyone says i love you, i don't care about anyone else because i love you. i don't care if we we're thousands of miles away i will still love you. nothing can change that ever", // Slide 8
+    "Btw the first letter of all 7 of those spelled your name <3",
+    "I really do care about you, and i want you to know that. i will be there for you on anything that happens in your life. i want to be someone you can just cry to and it will make you feel so much better."
 ];
 
 // State variables to track progress
