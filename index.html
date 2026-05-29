@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Title</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <h1 class="title">Hello World</h1>
-        <div id="mainDiv">Hello Div</div>
-        <br />
-        <button onclick="buttonClicked()">Click me</button>
-    </body>
+<head>
+    <!-- Metadata: Defines character set and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title Tag: Sets the browser tab title -->
+    <title>Addyson I love you</title>
+    <!-- CSS Link: Connects this HTML file to our custom styling rules -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Import: Imports a nice, elegant font from Google Fonts (Playfair Display) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Main Container: Holds all content and centers it -->
+    <div id="app-container">
+
+        <!-- === SCREEN 1: START QUESTION === -->
+        <section id="start-screen" class="screen active">
+            <!-- Top Text Element: Displays the main question -->
+            <h1>Do you want to see your birthday present?</h1>
+            <!-- Container for buttons: Centers and groups the Yes/No choices -->
+            <div class="button-group">
+                <!-- The 'Yes' button structure -->
+                <button id="btn-yes" class="styled-button">Yes</button>
+                <!-- The 'No' button structure -->
+                <button id="btn-no" class="styled-button">No</button>
+            </div>
+        </section>
+
+        <!-- === SCREEN 2: NO PATH (Sorry Screen) === -->
+        <section id="no-screen" class="screen hidden">
+            <!-- Text message for the "No" path -->
+            <h2>Oh, Bye ig.</h2>
+            <!-- Image/GIF element for visual effect -->
+            <img id="bye-gif" src="bye-agabye.gif" alt="Goodbye GIF placeholder">
+            <!-- Button to return to start -->
+            <button id="btn-change-mind" class="styled-button">I change my mind</button>
+        </section>
+
+        <!-- === SCREEN 3: SLIDE VIEWER (YES PATH) === -->
+        <section id="slide-screen" class="screen hidden">
+            <!-- Text display area for the current slide content -->
+            <div id="slide-content">
+                <!-- Initial text will be loaded here by JavaScript -->
+            </div>
+            <!-- Navigation Button to proceed through slides -->
+            <button id="btn-next-slide" class="styled-button">Next (Next)</button>
+        </section>
+
+        <!-- === SCREEN 4: FINALE MESSAGE === -->
+        <section id="finale-screen" class="screen hidden text-center">
+            <!-- Top "I Love You" Message -->
+            <h1>I love you, Happy 16th Birthday My Perfect Girl.</h1>
+            <!-- Container for the four final buttons -->
+            <div class="button-group finale-buttons">
+                <button id="love-btn-1" class="styled-button">I love you</button>
+                <button id="love-btn-2" class="styled-button">I love you more</button>
+            </div>
+        </section>
+
+        <!-- Heart element container (managed by JS for animation) -->
+        <div id="heart-animation">❤️</div> 
+
+    </div> <!-- End of app-container -->
+
+    <!-- JavaScript Link: Connects all the interactive logic -->
+    <script src="script.js"></script>
+</body>
 </html>
