@@ -18,12 +18,12 @@ const heartElement = document.getElementById('heart-animation');    // The visib
 
 // Array holding the 8 slides of text provided by you
 const birthdaySlides = [
-    "HAPPY BIRTHDAY ADDYSON!!\nI hope you had a amazing time hanging out with your best friends and your family for your sweet 16, I love you so much and i want to tell you everything i love about you because i really wasn't sure what to do for your birthday", // Slide 1
+    "HAPPY BIRTHDAY ADDYSON!!\nI hope you had a amazing time hanging out with your best friends and your family for your sweet 16, i want to tell you everything i love about you because i really wasn't sure what to do for your birthday", // Slide 1
     "A thing i seriously love the most about you, is your smile. i haven't told you thing but i had a dream about you before we were talking again and i just cant forget how beautiful your smile was and i get so happy inside seeing it every time we call", // Slide 2
     "definitely your love for the walking dead, yes I haven't seen it yet but i really do love how into the show you are, and.. how much you like rick aka your husband", // Slide 3
     "didn't forget about all the things you say to me, telling me im a bad person, saying for me to die, and that im embarrassing, its just funny to me and i love you for being that comfortable around me.", // Slide 4
-    "you call me nicknames i seriously love, baby my sweet boy, my handsome boy, and just now honey. they are just all so sweet and i get so nervous or anxious inside every time you call me it, it just makes me so happy", // Slide 5
-    "So interesting howyou are into birds, i never met anyone who's that interested on something like that, especially with the out side, i would love to talk to you all day about birds, i’d love to learn. oo i wonder what your favorite bird is", // Slide 6
+    "you call me nicknames i seriously love, baby my sweet boy, my handsome boy, and now honey. they are just all so sweet and i get so nervous or anxious inside every time you call me it, it just makes me so happy", // Slide 5
+    "So interesting how you are into birds, i never met anyone who's that interested on something like that, especially with the out side, i would love to talk to you all day about birds, i’d love to learn. oo i wonder what your favorite bird is", // Slide 6
     "one of the things i love aswell open you are with me. even if you weren't at first, who is really? i had no idea what to do at the moment and i kinda js felt useless at that time. im still really happy i was at least able to try", // Slide 7
     "Never forget in the end of the day, love all of you. i love how beautiful you are i love how happy you look with your with people you love. how bright you glow when you talk about your Interests, and passionate you are of those interested. and how much you mean to me i love you. i don't care what anyone says i love you, i don't care about anyone else because i love you. i don't care if we we're thousands of miles away i will still love you. nothing can change that ever", // Slide 8
     "Btw the first letter of all 7 of those spelled your name <3",
