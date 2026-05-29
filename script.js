@@ -1,5 +1,5 @@
 // --- DOM Element Selection & Initialization ---
-
+//
 // Selecting key elements from the HTML document to manipulate them later
 const startScreen = document.getElementById('start-screen'); // The initial question screen
 const noScreen = document.getElementById('no-screen');     // The "Oh, I'm sorry" screen
